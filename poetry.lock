@@ -1569,28 +1569,24 @@ files = [
 
 [[package]]
 name = "solana"
-version = "0.29.1"
+version = "0.29.2"
 description = "Solana Python API"
 category = "main"
 optional = false
-python-versions = "^3.7"
-files = []
-develop = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "solana-0.29.2-py3-none-any.whl", hash = "sha256:698aafa9fd9e1db7d0cd00460a4677bc2afb5ea4b3dfed6592aa95c102faf099"},
+    {file = "solana-0.29.2.tar.gz", hash = "sha256:4cbbe7f5b15926bc8037fed7b11c5a57896f3e86ceaac3852d96f10c4218ea1d"},
+]
 
 [package.dependencies]
-cachetools = "^4.2.2"
-construct-typing = "^0.5.2"
-httpx = "^0.23.0"
-solders = "^0.14.0"
-types-cachetools = "^4.2.4"
+cachetools = ">=4.2.2,<5.0.0"
+construct-typing = ">=0.5.2,<0.6.0"
+httpx = ">=0.23.0,<0.24.0"
+solders = ">=0.14.0,<0.15.0"
+types-cachetools = ">=4.2.4,<5.0.0"
 typing-extensions = ">=4.2.0"
 websockets = ">=9.0,<11.0"
-
-[package.source]
-type = "git"
-url = "https://github.com/8ball030/solana-py"
-reference = "f0601d7"
-resolved_reference = "f0601d7ef8508e4f6414f1799c817b6e8cb749a5"
 
 [[package]]
 name = "solders"
@@ -1967,4 +1963,4 @@ cli = ["typer", "ipython", "genpy", "black", "autoflake"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "65efec66276fa497ee8271c26abfc1d41953f2b5a00e6f012febcf62fce351fa"
+content-hash = "96c0ea9114aa61f1f8e788b944cf7f7a02cb999c6aa6d38f49dec5b77415d739"
