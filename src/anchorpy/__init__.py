@@ -15,14 +15,15 @@ from anchorpy.program.core import Program
 from anchorpy.program.event import EventParser
 from anchorpy.program.namespace.account import AccountClient, ProgramAccount
 from anchorpy.program.namespace.simulate import SimulateResponse
-from anchorpy.provider import Provider, SendTxRequest, Wallet
-from anchorpy.pytest_plugin import localnet_fixture, workspace_fixture
+from anchorpy.provider import Provider, Wallet
+from anchorpy.pytest_plugin import bankrun_fixture, localnet_fixture, workspace_fixture
 from anchorpy.workspace import WorkspaceType, close_workspace, create_workspace
 
 __all__ = [
     "Program",
     "Provider",
     "Context",
+    "bankrun_fixture",
     "create_workspace",
     "close_workspace",
     "Idl",
@@ -30,7 +31,6 @@ __all__ = [
     "WorkspaceType",
     "localnet_fixture",
     "Wallet",
-    "SendTxRequest",
     "Coder",
     "InstructionCoder",
     "EventCoder",
@@ -49,4 +49,4 @@ __all__ = [
 ]
 
 
-__version__ = "0.16.0"
+__version__ = "0.17.0"
